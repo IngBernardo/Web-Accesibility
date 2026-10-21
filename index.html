@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Community library: check our opening hours and reserve a book online.">
+  <title>Community Library - Hours and Book Reservations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <img src="images/logo.svg" alt="Community Library logo: an open book" width="60" height="60">
+    <p class="site-name">Community Library</p>
+    <div class="login-button" role="button" tabindex="0">Login</div>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="#hours">Opening hours</a></li>
+      <li><a href="#reserve">Reserve a book</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <h1>Welcome to the Community Library</h1>
+    <p>On this page you can do two things: check when the library is open and reserve a book to pick up later.</p>
+
+    <img class="banner" src="images/books.svg" alt="Shelf with colorful books" width="600" height="200">
+
+    <section id="hours" aria-labelledby="hours-title">
+      <h2 id="hours-title">Use case 1: Check our opening hours</h2>
+      <p>Before visiting, check the table to see what time we open and close each day.</p>
+
+      <table>
+        <caption>Library opening hours by day of the week</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Opens</th>
+            <th scope="col">Closes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Monday to Friday</th>
+            <td>8:00 AM</td>
+            <td>8:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Saturday</th>
+            <td>9:00 AM</td>
+            <td>2:00 PM</td>
+          </tr>
+          <tr>
+            <th scope="row">Sunday</th>
+            <td>Closed</td>
+            <td>Closed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="reserve" aria-labelledby="reserve-title">
+      <h2 id="reserve-title">Use case 2: Reserve a book</h2>
+      <p>Fill in the form and we will keep the book for you for 3 days. Fields marked as required must be completed.</p>
+
+      <form action="#" method="post">
+        <div class="field">
+          <label for="name">Full name (required)</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="book">Book title (required)</label>
+          <input type="text" id="book" name="book" required>
+        </div>
+
+        <div class="field">
+          <label for="day">Pick-up day</label>
+          <select id="day" name="day">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+          </select>
+        </div>
+
+        <button type="submit">Send reservation</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:info@communitylibrary.org">info@communitylibrary.org</a></p>
+    <p>Learn more about accessibility at <a href="https://www.w3.org/WAI/">W3C Web Accessibility Initiative</a>.</p>
+    <p>&copy; 2026 Community Library</p>
+  </footer>
+</body>
+</html>

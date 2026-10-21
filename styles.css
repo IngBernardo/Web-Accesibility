@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background-color: #ffffff;
+}
+
+/* Skip link: hidden until it receives keyboard focus */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: #000000;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #0b3d63;
+  color: #ffffff;
+}
+
+.site-name {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Div acting as a button: needs role="button" and tabindex="0" in the HTML */
+.login-button {
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #0b3d63;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:focus {
+  outline: 3px solid #f2b134;
+  outline-offset: 2px;
+}
+
+nav {
+  background-color: #e8eef3;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  list-style: none;
+}
+
+a {
+  color: #0b3d63;
+}
+
+nav a {
+  font-weight: bold;
+}
+
+/* Visible focus for keyboard users */
+a:focus,
+input:focus,
+select:focus,
+button:focus {
+  outline: 3px solid #d35400;
+  outline-offset: 2px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.banner {
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 0.5rem;
+}
+
+th,
+td {
+  border: 1px solid #555555;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+thead th {
+  background-color: #0b3d63;
+  color: #ffffff;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+}
+
+input,
+select {
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 400px;
+  /* Explicit colours so the border contrast (3:1 min, WCAG 1.4.11) can be measured */
+  color: #1a1a1a;
+  background-color: #ffffff;
+  border: 2px solid #555555;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #0b3d63;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #062740;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+}

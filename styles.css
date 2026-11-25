@@ -77,8 +77,14 @@ a:focus,
 input:focus,
 select:focus,
 button:focus {
-  outline: 3px solid #d35400;
+  outline: 3px solid #a63d00;
   outline-offset: 2px;
+}
+
+/* Footer has a dark background: use a light focus colour (9.2:1) */
+footer a:focus,
+.skip-link:focus {
+  outline-color: #f2b134;
 }
 
 main {
